@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Dan's Diner</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</head>
+<body>
+
+	<!-- navigation -->
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">Dan's Diner</a>
+			</div>
+
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li><a href="index.html">New Order</a></li>
+					<li><a href="myorders.html">Order History</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- hero img -->
+	<div class="page-header">
+		<img class="col-sm-offset-4" src="assets/images/bigdan.jpg">	
+	</div>
+
+	<!-- order history -->
+	<table class="table table-striped">
+		<thead>
+			<tr>
+				<th>#</th>
+				<th>Order Details</th>
+				<th>Status</th>
+				<th>Reorder</th>
+			</tr>
+			<tbody>
+				<tr>
+					<td>
+						1
+					</td>
+					<td>
+						Coffee, Eggs
+					</td>
+					<td>
+						Pending
+					</td>
+					<td>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						2
+					</td>
+					<td>
+						Coffee, Toast, Butter
+					</td>
+					<td>
+						Complete
+					</td>
+					<td>
+						<button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">Reorder</button>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						3
+					</td>
+					<td>
+						Pancakes, Eggs
+					</td>
+					<td>
+						Complete
+					</td>
+					<td>
+						<button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">Reorder</button>
+					</td>
+				</tr>
+			</tbody>
+		</thead>
+	</table>
+
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">We are glad you enjoyed that meal!</h4>
+	      </div>
+	      <div class="modal-body">
+	        Coffee, Toast, Butter
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	        <button type="button" class="btn btn-primary" data-dismiss="modal">Confirm Reorder</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+</body>
+</html>
+
